@@ -6,10 +6,12 @@ def last_day_of_month(day):
 last_day=[]
 end_31=[]
 end_30=[]
+print("Here are the last dates of the months")
 for month in range(1,13):
     print(last_day_of_month(datetime.date(2020,month,1)))
     last_day.append(last_day_of_month(datetime.date(2020,month,1)))
 
+print("Here are the last but 2 days if available")
 for i in last_day:
     #print(i.strftime('%y-%m-%d %a %H:%M:%S'))
     date_req=int(i.strftime('%d'))
